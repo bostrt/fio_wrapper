@@ -63,6 +63,11 @@ class URLs:
         self.groups_hub = config.get_url("groups_hub")
         self.groups_burn = config.get_url("groups_burn")
 
+        # systems
+        self.system_base = config.get_url("system_base")
+        self.system_all = config.get_url("system_all")
+        self.system_get = config.get_url("system_get")
+
     # Material
     def material_url(self) -> str:
         return self.base_url + self.material_base
@@ -212,3 +217,10 @@ class URLs:
 
     def group_burn_url(self, groupid: int) -> str:
         return f"{self.base_url}{self.groups_burn}/{groupid}"
+
+    # Systems
+    def system_url(self) -> str:
+        return f"{self.base_url}{self.system_base}"
+
+    def system_get_url(self, systemid: str) -> str:
+        return f"{self.system_url()}/{systemid}"

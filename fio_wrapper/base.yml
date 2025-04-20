@@ -42,3 +42,5 @@ fio_urls:
     groups_groupmemberships: /auth/groupmemberships
     groups_hub: /fioweb/grouphub
     groups_burn: /fioweb/burn/group
+    system_base: /systemstars
+    system_all: /
